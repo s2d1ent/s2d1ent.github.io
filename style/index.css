@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'icomoon'; 
+	src: url("fonts/icomoon.ttf"); 
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,33 +10,125 @@
 }
 body {
 	background-color: #5A005D;
-	width: 100%;
-	height: 1000px;
+
 
 }
+header {
+	background-color: #441146;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	z-index: 100;
+	filter: opacity(0%);
+}
 p,a,h1,h2,h3,h4,h5,h6 {
-font-family: Helvetica, Arial;
+font-family: Courier;
+}
+a {
+	text-decoration: none;
 }
 #container {
 	width: 100%;
-	height: 100%;
-	background-color: #5A005D;
+	height: 80%;
+/*	background-color: #5A005D;*/
+	background-color: ;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+
 #start {
 	width: 100%;
-	height: 60%;
+	height: 300px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 15% 0% 0% 0%;
+	background-color: ;	
+
+}
+#start_w,#start_w2  {
+color: white;
+text-align: center;
+font-size: 2%;
+filter: opacity(0%);
+z-index: 5
+
+}
+.nav-a {
+	color: white;
+	padding:5%;
+
+}
+nav {
+	display: inline-flex;
 	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+}
+#backs2d {
+	width: 100%;
+	display: inline-flex;
+	filter: opacity(0%);
+	justify-content: center;
+	position: fixed;
+	z-index: 1;
+}
+#backs2d_img {
+	width: 50%;
+	filter: opacity(25%);
+}
+#header_logo {
+
+	width: 35px;
+}
+
+#start-next {
+	width: 100%;
+	height: 300px;
+	justify-content: center;
+	margin: 5% 0% 0% 0%;
+	display: none;
+	background-color: ;
+	z-index: 5;
 	
 }
-#start h1 {
-	color: white;
+#start_next_one {
+	display: inline-flex;
+	align-items: center;
+	margin: 2% 0% 0% 0% ;
+	cursor: pointer;
+	background-color: ;
+	height: 200px;
 }
+
+#start_next_left {
+	width: 30px;
+	height: 20px;
+	transform: skewY(45deg);
+	background-color: white;
+}
+#start_next_right {
+	width: 30px;
+	height: 20px;
+	transform: skewY(-45deg);
+	background-color: white;
+
+}
+
+/*  ВЫШЕ START */
+#proj {
+	width: 100%;
+	background-color: yellow;
+	height: 500px;
+	align-items: center;
+	flex-direction: column;
+	display: none;
+}
+
+
