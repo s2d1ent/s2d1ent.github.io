@@ -12,7 +12,8 @@ var start_w=doc.getElementById("start_w"),
 	start_next_one=doc.getElementById("start_next_one"),
 	backs2d=doc.getElementById("backs2d"),
 	proj=doc.getElementById("proj"),
-	navP=doc.querySelectorAll(".nav-a");
+	navP=doc.querySelectorAll(".nav-a"),
+	basement=doc.getElementById("basement");
 
 var z=20;
 	start_w.style.marginTop=z+"%";
@@ -73,6 +74,7 @@ start();
 function event() {
 start_next_one.addEventListener("click",function () {
 	proj.style.display="flex";
+	basement.style.display="flex";
 })
 
 
