@@ -1,6 +1,9 @@
 @font-face {
-	font-family: 'icomoon'; 
-	src: url("fonts/icomoon.ttf"); 
+	font-family: 'ManropeL';
+	src: url('fonts/Manrope-Light.eot');
+	src: local('☺'), url('fonts/Manrope-Light.woff') format('woff'), url('fonts/Manrope-Light.ttf') format('truetype'), url('fonts/Manrope-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -10,7 +13,10 @@
 }
 body {
 	background-color: #5A005D;
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%
 
 }
 header {
@@ -20,6 +26,10 @@ header {
 	position: fixed;
 	z-index: 100;
 	filter: opacity(0%);
+	box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
+
+	display:inline-flex;
+	justify-content: center;
 }
 p,a,h1,h2,h3,h4,h5,h6 {
 font-family: Courier;
@@ -30,7 +40,7 @@ a {
 #container {
 	width: 100%;
 	height: 80%;
-/*	background-color: #5A005D;*/
+	background-color: ;
 	background-color: ;
 
 	display: flex;
@@ -38,6 +48,21 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+.nav-a {
+	color: white;
+	padding:5%;
+
+}
+nav {
+	display: inline-flex;
+	justify-content:center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+}
+
+/* START  */
 
 #start {
 	width: 100%;
@@ -58,19 +83,7 @@ filter: opacity(0%);
 z-index: 5
 
 }
-.nav-a {
-	color: white;
-	padding:5%;
 
-}
-nav {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-
-}
 #backs2d {
 	width: 100%;
 	display: inline-flex;
@@ -79,12 +92,12 @@ nav {
 	position: fixed;
 	z-index: 1;
 }
-#backs2d_img {
-	width: 50%;
+#back {
+	width: 100%;
 	filter: opacity(25%);
 }
 #header_logo {
-
+	display: none;
 	width: 35px;
 }
 
@@ -121,14 +134,148 @@ nav {
 
 }
 
-/*  ВЫШЕ START */
+/*  PROJECT */
 #proj {
-	width: 100%;
-	background-color: yellow;
-	height: 500px;
+		width: 85%;
+	height: 1500px;
+
+	background-color:  ;
 	align-items: center;
 	flex-direction: column;
 	display: none;
+	z-index: 5;
+}
+#projh {
+	color: white;
+}
+.proj_one {
+display: inline-flex;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+height: 300px;
+background-color: white;
+
+perspective: 400px;
+
+margin: 5% 0% 0% 0%;
+}
+/* Наполнение PROJECT */
+
+/*Набор 1*/
+.proj_one_img {
+	width: 30%;
+	height: 100%;
+	background-color: red;
+
+	transform: skewY(10deg) ;
+	border-radius: 10px;
+	box-shadow: -20px 25px 0px 0px rgba(58, 0, 60, 0.7);
+
 }
 
+.proj_one_text {
+	width: 100%;
+	height: 100%;
+	background: ;
 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.one_text_h {
+	margin: 0% 0% 0% 0% ;
+	font-family: Helvetica
+}
+.one_text_p {
+	width: 93%;
+	font-family: Helvetica;
+	margin: 2% 0% 0% 0%;
+}
+.stats {
+	width: 93%;
+	height: 100%;
+	background-color: ;
+}
+.link {
+	width: 100%;
+	height: 100%;
+	background-color: ;
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.link_a {
+		font-family: Helvetica;
+		color: black;
+		margin: 0% 1% 0% 0%;
+}
+.proj_num {
+	width: 100%;
+	display: inline-flex;
+	justify-content: flex-end;
+	background-color: ;
+}
+.proj_num_p {
+	font-family: Helvetica;
+	margin: 0% 1% 0% 0%;
+}
+
+/* Набор 2*/
+.proj_two_img {
+	width: 30%;
+	height: 100%;
+	background-color: red;
+
+	transform: skewY(-10deg) ;
+	border-radius: 10px;
+		box-shadow: 20px 25px 0px 0px rgba(58, 0, 60, 0.7);
+
+}
+
+.proj_one_text {
+	width: 100%;
+	height: 100%;
+	background: ;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.one_text_h {
+	margin: 0% 0% 0% 0% ;
+	font-family: Helvetica
+}
+.one_text_p {
+	width: 93%;
+	font-family: Helvetica;
+	margin: 2% 0% 0% 0%;
+}
+.stats {
+	width: 93%;
+	height: 100%;
+	background-color: ;
+}
+.link_two {
+	width: 100%;
+	height: 100%;
+	background-color: ;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+.link_a_two {
+		font-family: Helvetica;
+		color: black;
+		margin: 0% 0% 0% 1%;
+}
+.proj_num_two {
+	width: 100%;
+	display: inline-flex;
+	justify-content: flex-start;
+	background-color: ;
+}
+.proj_num_p {
+	font-family: Helvetica;
+	margin: 0% 0% 0% 1%;
+}

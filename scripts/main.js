@@ -11,7 +11,8 @@ var start_w=doc.getElementById("start_w"),
 	start_next=doc.getElementById("start-next"),
 	start_next_one=doc.getElementById("start_next_one"),
 	backs2d=doc.getElementById("backs2d"),
-	proj=doc.getElementById("proj");
+	proj=doc.getElementById("proj"),
+	navP=doc.querySelectorAll(".nav-a");
 
 var z=20;
 	start_w.style.marginTop=z+"%";
@@ -50,9 +51,9 @@ if (i==256) {
 							if (pageYOffset>200 ) {
 								clearInterval(aatimer);
 								num[2]==false;
-							} else if (pageYOffset<120 ) {
+							} /*else if (pageYOffset<120 ) {
 								var aatimer=setInterval(aa,200);
-							}
+							}*/
 
 				} //анимация стрелочки
 				var aatimer=setInterval(aa,200);
@@ -63,15 +64,24 @@ if (i==256) {
 		backs2d.style.filter="opacity(" + num[0] + ")";
 	} // появления хедера и лого
 	}
-let bbtimer=setInterval(bb,100);
+let bbtimer=setInterval(bb,70);
 }
-let starttimer=setInterval(ab,100);
+let starttimer=setInterval(ab,70);
 }
 start();
 
+function event() {
 start_next_one.addEventListener("click",function () {
 	proj.style.display="flex";
 })
+
+
+
+
+}
+event();
+
+
 
 
 
