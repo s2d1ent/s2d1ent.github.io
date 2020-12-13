@@ -17,7 +17,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	width: 100%
-
+	min-width:1536px;
 }
 header {
 	background-color: #441146;
@@ -203,7 +203,7 @@ margin: 10% 0% 0% 0%;
 	background-color: ;
 }
 .link {
-	width: 100%;
+	width: 93%;
 	height: 100%;
 	background-color: ;
 	display: inline-flex;
@@ -263,7 +263,7 @@ margin: 10% 0% 0% 0%;
 	background-color: ;
 }
 .link_two {
-	width: 100%;
+	width: 93%;
 	height: 100%;
 	background-color: ;
 	display: inline-flex;

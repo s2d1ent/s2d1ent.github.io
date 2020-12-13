@@ -1,9 +1,9 @@
 var doc=document,
 	wiw=window;
 
-addEventListener("scroll",function (argument) {
+/*addEventListener("scroll",function (argument) {
 console.log(pageYOffset);
-})
+})*/
 
 var start_w=doc.getElementById("start_w"),
 	start_w2=doc.getElementById("start_w2"),
