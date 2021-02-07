@@ -178,7 +178,7 @@ ul, li {
 .project__right-img {
   margin: 0 auto;
   width: 100%;
-  position: relative;
+  position: absolute;
   opacity: 1;
   transition: 10s;
 }
