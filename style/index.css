@@ -181,6 +181,10 @@ ul, li {
   position: absolute;
   opacity: 1;
   transition: 10s;
+  display: none;
+}
+.project__right-img:first-child {
+  display: block;
 }
 .project__right-imgC:nth-child(1) {
 opacity: .1;
