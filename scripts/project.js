@@ -22,30 +22,25 @@ var btn, what_use;
 $(".proj").bind("click",(event)=>{
   $(".container-btn").css("display","flex")
   what_use=0;
-//  console.log("what_use"+what_use);
+  // Внутренняя область видимости - так как задана в родитльской функции
+  // она видна детям(switch_case и slider)
   switch_case()
 })
 $(".container-btn").bind("click",(event)=>{
   what_use=1;
-//  console.log("what_use"+what_use);
   switch_case()
 })
 function switch_case() {
-//  console.log("what_use "+what_use+" in switch_case");
-//  btn=Array.from($(".proj")).indexOf(event.target);
   if (what_use==0) {
     btn=Array.from($(".proj")).indexOf(event.target)
   } else if (what_use==1) {
     slider()
   }
-  //slider()
   switch (btn){
     case 0:
      LazyCote.Data("src/logo1.png","#8110c7"," no-repeat url('src/LazyCote_code.png')");
-     console.log(btn)
     break;
     default:
-    console.log(btn)
   }
 }
 function slider() {
@@ -60,5 +55,14 @@ function slider() {
         btn--;
       }
     }
-//    console.log(btn)
 }
+
+// Паралакс контакты
+// var o = $(".container__contacts");
+// $(".container__contacts-con").on("mousemove", function (t) {
+//     var e =-($(window).innerWidth() / 2 - t.pageX) / 30 ,
+//         n =($(window).innerHeight() * 2 - t.pageY) / 30 ;
+// //    var sX = ($(window).innerWidth() / 2 - t.pageX) / 20,//Переменная отвечающая за тень на оси x
+// //        sY = ($(window).innerHeight() / 2 + t.pageY)/100;//Переменная отвечающая за тень на оси y
+//     o.attr("style", "ransform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
+// })

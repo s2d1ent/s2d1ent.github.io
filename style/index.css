@@ -15,6 +15,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 ul, li {
   list-style-type: none;
@@ -283,6 +284,7 @@ transition: .5s;
   margin:0 auto;
   background: ;
   margin-top: 150px;
+  overflow: hidden;
 }
 .contacts__container {
   width: 100%;
@@ -297,7 +299,7 @@ transition: .5s;
   line-height: 50px;
 }
 .container__contacts {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -306,11 +308,32 @@ transition: .5s;
   margin-top: 100px;
   width: 350px;
   height: 500px;
-  background: #cd1351;
+  background:#cd1351;
 }
 .container__contacts-con:nth-child(1) {
-  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0 82%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.container__contacts-con:nth-child(3) {
-  clip-path: polygon(0 20%, 100% 0, 100% 82%, 0 100%);
+.container__contacts-con:nth-child(1) {
+//  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0 80%);
+  background-position: left;
+
+}
+.container__contacts-con:nth-child(2) {
+//  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  background-position: right;
+}
+.con-block {
+  width: 100%;
+  height: 33.33%;
+  background: ;
+}
+
+.con-title {
+  color: white;
+
+  font-weight: 700;
+  font-size: 48px;
+  z-index: 100;
 }
