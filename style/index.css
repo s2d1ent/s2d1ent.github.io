@@ -37,7 +37,7 @@ ul, li {
   max-width: 1920px;
   width: 100%;
   height: 550px;
-  background: no-repeat url("../src/banner.jpg") rgba(11, 106, 128, 1);
+  background: no-repeat url("../src/banner.jpg") #cd1351;
   background-size:cover;
   margin: 0 auto;
   display: flex;
@@ -73,7 +73,7 @@ ul, li {
 .container__right-img {
   width: 550px;
   height: 550px;
-  padding-top: 0px;
+  padding-top: 25px;
 }
 /* selector */
 .selector {
@@ -95,7 +95,7 @@ ul, li {
   margin: 0 auto;
   text-align: center;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 50px;
   background: ;
 }
@@ -113,15 +113,15 @@ ul, li {
   width: 200px;
   height: 50px;
   background: #fff;
-  border:2px solid #3CA7C0 ;
+  border:2px solid #dd1c51 ;
   border-radius: 10px;
-  color: #3CA7C0;
+  color: #dd1c51;
   font-weight: 500;
   font-size: 28px;
   transition: .6s;
 }
 .proj:hover {
-  background: #3CA7C0;
+  background: #dd1c51;
   color: #fff;
   transition: .6s;
 }
@@ -131,10 +131,12 @@ ul, li {
   width: 100%;
   height: 800px;
 //  background: #0B6A80;
-  background: no-repeat url("../src/back_proj.jpg") #0B6A80;
+  background: no-repeat url("../src/back_proj.jpg") #cd1351;
   background-size: cover;
   margin: 0 auto;
   clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  justify-content: space-between;
 }
 .project__container {
   padding-top: 200px;
@@ -144,6 +146,28 @@ ul, li {
 
   display: flex;
   justify-content: space-around;
+}
+.container-btn{
+  width: 70px;
+  height: 100%;
+  background: rgba(0, 0, 0, .1);
+  transition: .5s;
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+}
+.container-btnImg {
+  width: 100px;
+  transition: .5s;
+  opacity: .5;
+}
+.container-btn:hover .container-btnImg {
+  opacity: .8;
+}
+.container-btn:hover {
+  transition: .5s;
+  background: rgba(0, 0, 0, .3);
 }
 .project__left-title {
   max-width: 600px;
@@ -252,40 +276,41 @@ transition: .5s;
     transform: rotateY(-180deg) scale(.4) translate(0px, -350px);
   }
 }
-/* twitch */
-.twitch {
+/* contacts */
+.contacts {
   max-width: 1920px;
   width: 100%;
-  height: 650px;
-  margin: 0 auto;
+  margin:0 auto;
+  background: ;
+  margin-top: 150px;
 }
-.twitch__container {
+.contacts__container {
+  width: 100%;
+  height: 500px;
+  margin:0 auto;
+  padding-bottom: 250px;
+}
+.contacts__container-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+.container__contacts {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding-bottom: 100px;
+  justify-content: space-around;
 }
-.twitch__container-title {
-  padding-top: 50px;
-
-  font-weight: 700;
-  font-size: 52px;
-  line-height: 50px;
+.container__contacts-con {
+  margin-top: 100px;
+  width: 350px;
+  height: 500px;
+  background: #cd1351;
 }
-.player {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 120px;
+.container__contacts-con:nth-child(1) {
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0 82%);
 }
-.twitch__player {
-}
-#chat_embed {
-  outline: none;
-  border: none;
+.container__contacts-con:nth-child(3) {
+  clip-path: polygon(0 20%, 100% 0, 100% 82%, 0 100%);
 }
